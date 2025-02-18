@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비디오와 소스 요소</title>
+  </head>
+  <body>
+    <video controls muted poster="/src/assets/video/poster.jpg">
+      <source
+        src="/src/assets/video/google-developer-stories.mp4"
+        type="video/mp4"
+      />
+      <track
+        src="/src/assets/video/stories-en.vtt"
+        kind="captions"
+        srclang="en"
+        label="English Caption"
+      />
+    </video>
+    <hr />
+    <!-- 아래의 예시도 작동은 하나 video 안에 넣을 것이 많은 관계로 이런식으로 잘 사용 X -->
+    <!-- <video
+      controls
+      src="/src/assets/video/google-developer-stories.mp4"
+    ></video> -->
+  </body>
+</html>
